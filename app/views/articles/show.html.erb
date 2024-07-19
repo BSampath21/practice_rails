@@ -1,0 +1,10 @@
+<h1>Showing the articles info</h1>
+
+<p><strong>Title: </strong><%= @article.title%></p>
+<p><strong>Title: </strong><%= @article.description%></p>
+
+
+<%= link_to 'Edit' , edit_article_path(@article) %> <br><br>
+<%= button_to 'Delete', article_path(@article), method: :delete, onclick: "return confirm('Are you sure?');" %> <br>
+<%= link_to 'Return to Articles listing' , articles_path %>
+
